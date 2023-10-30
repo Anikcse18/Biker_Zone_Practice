@@ -238,9 +238,10 @@
         <div>
           <h1 class="text-5xl text-center font-semibold">Latest News</h1>
           <!-- First Card -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-y-6 md:justify-between mt-10 p-5 lg:p-0">
+          <div class="grid grid-cols-1 md:grid-cols-3 md:gap-x-5 p-5 gap-y-5">
+
             <div class="">
-              <div class="card card-compact md:w-80 lg:w-96 shadow-xl">
+              <div class="card card-compact  shadow-xl">
                 <figure><img src="./images/others/latest1.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Ducati XDIAVEL S-73</h2>
@@ -253,9 +254,9 @@
 
             </div>
             <!-- Second Card -->
-            <div>
-              <div class="card card-compact md:w-80 lg:w-96  shadow-xl">
-                <figure><img src="./images/others/latest2.png" alt="Shoes" /></figure>
+            <div class="">
+              <div class="card card-compact  shadow-xl">
+                <figure><img src="./images/others/latest1.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Ducati XDIAVEL S-73</h2>
                   <p class="leading-6	">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
@@ -266,10 +267,11 @@
               </div>
 
             </div>
-            <!-- Third Card -->
-            <div>
-              <div class="card card-compact md:w-80 lg:w-96  shadow-xl">
-                <figure><img src="./images/others/latest3.png" alt="Shoes" /></figure>
+
+              <!-- Third card -->
+            <div class="">
+              <div class="card card-compact shadow-xl">
+                <figure><img src="./images/others/latest1.png" alt="Shoes" /></figure>
                 <div class="card-body">
                   <h2 class="card-title">Ducati XDIAVEL S-73</h2>
                   <p class="leading-6	">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.</p>
@@ -282,7 +284,6 @@
             </div>
           </div>
 
-        </div>
       </section>
 
 
@@ -372,6 +373,45 @@
       </section>
       <div class="my-14">
         <h1 class="text-5xl text-center font-semibold p-5">Frequently Asked <span class="text-bike-primary">Questions</span></h1>
+
+        <div class="hero my-10">
+          <div class="hero-content flex-col space-y-14 md:space-x-40 lg:flex-row">
+            <img src="./images/others/faq.png" class="w-3/5 md:w-4/5  md:rounded-lg "/>
+
+            <!-- Acordion -->
+            <div class="grid gap-4">
+              <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" checked="checked" /> 
+                <div class="collapse-title text-xl font-medium">
+                  What are the most important things I should know about riding a bike?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border ">
+                <input type="radio" name="my-accordion-2" /> 
+                <div class="collapse-title text-xl font-medium">
+                  How can I tell if my helmet is old and I need a new one?
+                </div>
+                <div class="collapse-content"> 
+                  <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border">
+                <input type="radio" name="my-accordion-2" /> 
+                <div class="collapse-title text-xl font-medium">
+                  Click to open this one and close others
+                </div>
+                <div class="collapse-content"> 
+                  <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This will help you be a more focused and legally compliant bike rider. </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <section>
@@ -379,6 +419,47 @@
       </section>
 
     </main>
-    <footer></footer>
+    <footer class="p-10 bg-neutral texttext-neutral-content">
+
+      <div class="md:container md:mx-auto flex flex-col md:flex-row justify-between text-white">
+        <aside>
+          <div>
+            <div class="flex gap-5">
+              <p><a href="#">Download Now</a></p>
+              <p><a href="#">License</a></p>
+
+            </div>
+            <div class=" grid grid-cols-3 gap-y-4 md:flex flex-row md:space-x-5 my-5">
+              <p><a href="#">About</a></p>
+              <p><a href="#">Features</a></p>
+              <p><a href="#">Pricing</a></p>
+              <p><a href="#">Careers</a></p>
+              <p><a href="#">Help</a></p>
+              <p><a href="#">Privacy Policy</a></p>
+
+            </div>
+          
+          </div>
+          
+
+        </aside>
+        
+        <nav>
+          <header class="footer-title">Get The Apps</header> 
+          <div class="grid grid-cols-1 w-2/4 gap-4">
+            <img src="./images/others/android.png" alt="">
+            <img src="./images/others/ios.png" alt="">
+          </div>
+        </nav>
+        
+      
+      </div>
+    
+      
+      
+      <div class="md:container md:mx-auto text-center md:text-left ">
+        <p class="text-slate-400 text-sm mt-6">© 2020 bike. All rights reserved</p>
+      </div>
+    </footer>
   </body>
 </html>
